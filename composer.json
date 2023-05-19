@@ -3,7 +3,7 @@
   "require": {
     "symfony/console": "^5.2"
   },
-  "bin": ["joker"],
+  "bin": ["bin/joker"],
   "scripts": {
     "lint": "echo 'Would run linter'",
     "test": "echo 'Would run tests'"
