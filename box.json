@@ -1,5 +1,4 @@
 {
-  "main": "bin/joker",
   "output": "build/joker.phar",
   "compression": "GZ",
   "finder": [

@@ -18,3 +18,18 @@ jobs:
     - uses: php-actions/composer@v6
     - run: composer lint
     - run: composer test
+    - name: Install Box
+      run: |
+        export BOX_VERSION="4.3.8" 
+        wget "https://github.com/humbug/box/releases/download/${BOX_VERSION}/box.phar" --quiet -O ./box
+        chmod +x ./box
+        sudo mv ./box /usr/local/bin
+    - name: Build Application PHAR
+      run: |
+        box validate
+        box compile
+    - name: Self-Test
+      run: |
+        ./build/joker.phar | grep -q "?"
+        ./build/joker.phar app:joke | grep -q "?"
+        ./build/joker.phar app:say-hello | grep -q "Hello"
