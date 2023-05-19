@@ -23,4 +23,5 @@ class SayHelloCommand extends Command {
 
     return Command::SUCCESS;
   }
+
 }

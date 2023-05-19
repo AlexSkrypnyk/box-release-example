@@ -33,4 +33,5 @@ class JokeCommand extends Command {
 
     return Command::SUCCESS;
   }
+
 }

@@ -8,9 +8,17 @@
       "Drevops\\App\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Drevops\\App\\Tests\\": "tests/"
+    }
+  },
   "bin": ["bin/joker"],
   "scripts": {
     "lint": "echo 'Would run linter'",
-    "test": "echo 'Would run tests'"
+    "test": "phpunit tests"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
   }
 }
