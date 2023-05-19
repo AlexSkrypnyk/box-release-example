@@ -3,6 +3,11 @@
   "require": {
     "symfony/console": "^5.2"
   },
+  "autoload": {
+    "psr-4": {
+      "Drevops\\App\\": "src/"
+    }
+  },
   "bin": ["bin/joker"],
   "scripts": {
     "lint": "echo 'Would run linter'",
