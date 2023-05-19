@@ -1,0 +1,13 @@
+{
+  "chmod": "0755",
+  "main": "bin/joker",
+  "output": "build/joker.phar",
+  "stub": true,
+  "compression": "GZ",
+  "finder": [
+    {
+      "in": "./",
+      "exclude": ["tests"]
+    }
+  ]
+}

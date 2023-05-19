@@ -1,0 +1,11 @@
+{
+  "name": "drevops/joker",
+  "require": {
+    "symfony/console": "^5.2"
+  },
+  "bin": ["joker"],
+  "scripts": {
+    "lint": "echo 'Would run linter'",
+    "test": "echo 'Would run tests'"
+  }
+}
